@@ -27,5 +27,4 @@ func (controller ImpHelloController) Hello(ctx *web.WebRequestContext) {
 		ctx.ThrowError(web.HttpErrorBadRequest)
 	}
 	ctx.SetModel("Hello " + helloRequest.PathVariables.Name)
-	ctx.SetResponseContentType(web.MediaTypeApplicationTextHtml)
 }
